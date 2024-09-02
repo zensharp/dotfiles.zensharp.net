@@ -7,6 +7,13 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'Dotfiles',
+			logo: {
+				light: './src/assets/logo-black.svg',
+				dark: './src/assets/logo-white.svg',
+			},
+			customCss: [
+				'./src/styles/custom.css',
+			],
 			social: {
 				github: 'https://github.com/zensharp/dotfiles',
 			},
