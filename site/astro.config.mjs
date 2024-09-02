@@ -24,6 +24,9 @@ export default defineConfig({
 					autogenerate: { directory: 'etc' },
 				},
 			],
+			editLink: {
+				baseUrl: 'https://github.com/zensharp/dotfiles.zensharp.net/edit/main/docs/',
+			},
 		}),
 	],
 });
