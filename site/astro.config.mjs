@@ -32,7 +32,7 @@ export default defineConfig({
 				},
 			],
 			editLink: {
-				baseUrl: 'https://github.com/zensharp/dotfiles.zensharp.net/edit/main/docs/',
+				baseUrl: 'https://github.com/zensharp/dotfiles.zensharp.net/edit/main/site/',
 			},
 		}),
 	],
