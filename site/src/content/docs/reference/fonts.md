@@ -2,6 +2,11 @@
 title: Fonts
 description: Installing dotfiles on Windows.
 ---
+* [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+  * Install `OpenSans-VariableFont_wdth,wght.ttf`.
+* [iA-Fonts](https://github.com/iaolo/iA-Fonts/tree/master/iA%20Writer%20Quattro)
+  * Install `iA Writer Quattro V Regular.ttf`.
+* [Iosevka](https://github.com/be5invis/Iosevka/releases/latest)
 
 | Environment | Font | Asset Name | Ligatures |
 | --- | --- | --- | --- |
@@ -12,7 +17,3 @@ description: Installing dotfiles on Windows.
 
 > [!TIP]
 > Click the "View package list" link on the [releases page](https://github.com/be5invis/Iosevka/releases/latest)
-
-# See Also
-* [Iosevka - Releases](https://github.com/be5invis/Iosevka/releases/latest)
-
