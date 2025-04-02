@@ -25,11 +25,12 @@ Run the provided Powershell script to install essential software.
 
 1. `winget install -e --id Git.Git --accept-source-agreements`
 1. Open a PowerShell as administrator.
-1. `git clone https://github.com/zensharp/dotfiles ~/dotfiles`.
+1. `cd ~`
+1. `git clone https://github.com/zensharp/dotfiles`.
 1. `cd ~/dotfiles/templates/windows`
-1. `set-executionpolicy Unsigned`
+1. `notepad setup.ps1`
+1. `Set-ExecutionPolicy -Remote Signed -Scope Process -Force`
 1. `./setup.ps1`
-1. Invert scroll direction ([jamie-pate/flipflop-windows-wheel](https://github.com/jamie-pate/flipflop-windows-wheel))
 
 ### Set Windows Settings
 | Path | Name | Value |
@@ -56,15 +57,15 @@ Run the provided Powershell script to install essential software.
 ### Enable WSL
 1. Apps > Optional Features > More Windows features > Enable "Windows Subsystem for Linux".
 1. Apps > Optional Features > More Windows features > Enable "Virtual Machine Platform".
-1. Restart (?).
-1. Open an Administrator PowerShell. Run `wsl --set-default-version 1` and `wsl --set-version Ubuntu 1`.
-1. Restart.
-1. `wsl --install -d Ubuntu`
+1. Open an Administrator PowerShell.
+1. `wsl --set-default-version 1`.
+1. `wsl --install -d ubuntu`
+1. `wsl --set-version ubuntu 1`
 
 :::tip
 You can uninstall distributions with the following:
 ```shell
-wsl --unregister Ubuntu
+wsl --unregister ubuntu
 ```
 :::
 
@@ -75,6 +76,13 @@ pip3 install --user --upgrade pip --break-system-packages
 pip install --user git+https://github.com/cpbotha/xdg-open-wsl.git
 ```
 :::
+
+### Configure Ubuntu
+1. Add ssh keys to [GitHub](https://github.com/settings/ssh/new).
+1. Add ssh keys to [GitLab](https://gitlab.com/-/user_settings/ssh_keys)
+1. `git clone git@github.com:zensharp/dotfiles $HOME/dotfiles`
+1. `cd $HOME/dotfiles`
+1. `./setup.sh 2> >(tee err.txt)`
 
 ---
 
